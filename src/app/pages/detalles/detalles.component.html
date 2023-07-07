@@ -1,0 +1,25 @@
+<table class="table table-striped table-bordered">
+    <thead class="table-primary">
+        <tr>
+            <th>Concepto</th>
+            <th>Importe</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Ordenante</th>
+            <th>Receptor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf="transferencias" >
+            <td>{{transferencias.concepto}}</td>
+            <td>{{transferencias.importe | currency: 'EUR'}}</td>
+            <td>{{transferencias.fecha | date: 'shortDate' }}</td>
+            <td>{{transferencias.fecha | date: 'shortTime' }}</td>
+            <td>{{transferencias.ordenante.usuario}}</td>
+            <td>{{transferencias.beneficiario.usuario}}</td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-primary" routerLink="/pages/transferencias-enviadas">Volver</button>
+
+

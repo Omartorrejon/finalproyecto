@@ -1,0 +1,38 @@
+
+ <nav class="main-menu">
+    
+    
+  
+
+
+
+
+  <ul>
+    <h1>Bank Santander</h1>
+    <li><a routerLink="/auth/login">Iniciar sesión</a></li>
+    <li><a routerLink="/pages/dashboard">
+      <a>Inicio</a>
+    </a></li>
+    <li><a routerLink="/pages/perfil">Mi Perfil</a></li>
+    <li><a routerLink="/pages/saldo">Saldo actual</a></li>
+    <li><a routerLink="/pages/transferencias">Transferencias</a></li>
+    
+      
+        
+      
+  
+  
+  
+    
+    <li class="cerrarSesion" (click)="cerrarSesion()">
+      <a routerLink="/auth/login">
+        Cerrar sesión
+      </a></li>
+  </ul>
+</nav>
+
+
+<router-outlet></router-outlet>
+<footer class="footer" >
+<h1 routerLink="/pages/footer1" ></h1>
+</footer>

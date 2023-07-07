@@ -1,0 +1,19 @@
+
+<hr>
+<div class="section">
+    <div>
+        <div class="titulo-trans" >
+            <div >
+                <h1>Mi perfil</h1>
+            </div>
+            <ul >
+                <li class="list-group-item">Nombre: {{cliente?.usuario}}</li>
+                <li class="list-group-item">Correo: {{cliente?.correo}}</li>  
+                <li class="list-group-item">Gestor: {{cliente?.gestor.usuario}}</li>
+            </ul>
+        </div>
+        <input  [(ngModel)]="cliente.password" placeholder="Cambiar contraseña" type ="password">
+        <button  (click)="guardarCliente()" class="btn btn-primary">Enviar</button>
+    </div>
+    
+</div>

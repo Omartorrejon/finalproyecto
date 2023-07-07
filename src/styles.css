@@ -1,0 +1,213 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    --color-primary: #ff0606c4;
+    --color-secondary: rgb(243, 53, 49);
+    --color-background: #edb178;
+    --color-text: #ffffff;
+    --color-warning: orange;
+    --color-success: greenyellow;
+    --color-danger: crimson;
+    --color-shade-dark: rgba(10, 10, 10, 0.1);
+    --color-shade-light: rgba(11, 11, 11, 0.1);
+}
+
+html {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: monospace;
+    font-size: 22px;
+}
+
+input {
+    font-size: inherit;
+    padding: 10px 12px;
+    background-color: var(--color-shade-light);
+    border: 1px solid var(--color-shade-dark);
+    color: var(--color-text);
+}
+
+body {
+    
+    width: 1500px;
+    height: 1000px;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--color-shade-dark);
+
+    
+    background: url('src/app/datos/behang-caribbean_9.jpg') center center / cover no-repeat fixed;
+  background-color: #68a5e5; /* Reemplaza #f0f0f0 con el color de fondo deseado */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h2,
+h3 {
+
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration-style: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-warning {
+    color: var(--color-warning);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.titulo-transferecnia{
+
+    padding-top: 8%;
+    color: white;
+    
+
+
+}
+.btn {
+    padding: 10px 12px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.btn-primary {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+
+    margin-left: 200px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+
+
+}
+.btn-primary:hover {
+   
+    background-color:rgb(135, 135, 168);
+}
+
+
+
+
+
+.btn-secundary {
+    position: absolute;
+    top: 800px;
+    /* Cambia esta propiedad según la posición vertical deseada */
+    left: 780px;
+    border-radius: 5px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    border: 0;
+
+    font-size: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+
+
+
+}
+.btn-secundary:hover {
+   
+    background-color:rgb(135, 135, 168);
+}
+
+.btn-tercero {
+    position: absolute;
+    top: 800px;
+    /* Cambia esta propiedad según la posición vertical deseada */
+    left: 780px;
+    border-radius: 5px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+
+    margin-left: 200px;
+    border: 0;
+
+    font-size: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+
+}
+.btn-tercero:hover {
+   
+    background-color:rgb(135, 135, 168);
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+.contactar {
+    margin-left: 110px;
+    background: rgba(247, 247, 247, 0.86);
+    border: 1px solid #FFFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+@media (max-width: 844px) and (max-height: 390px) {
+    body {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        margin: 0;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: var(--color-shade-dark);
+
+        background-color: #68a5e5;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1 {
+            max-width: 50px;
+            margin-left: 50px;
+            color: white;
+            text-align: center;
+            padding: 0%;
+            margin: 0%;
+        }
+    }
+
+}

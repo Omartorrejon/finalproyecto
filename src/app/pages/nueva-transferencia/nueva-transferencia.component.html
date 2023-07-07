@@ -1,0 +1,12 @@
+
+
+<section class="section">
+    <div class="titulo-trans">Nueva Transferencia</div> 
+    <input  [(ngModel)]="nuevaTransferencia.beneficiario.id" placeholder="Beneficiario" type ="text">
+    <input  [(ngModel)]="nuevaTransferencia.importe" placeholder="Importe" type ="number">
+    <input placeholder="Alias" type="text">
+    <input  [(ngModel)]="nuevaTransferencia.concepto"  placeholder="Concepto" type ="text">
+
+<div class="button">
+    <button (click)="enviarTransferencia()" class="btn btn-primary">Enviar</button>
+</div>
